@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TemporaryDatabase.View.EntryPage">
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="Start"
+            Padding="20">
+            <Label x:Name="IdValue"/>
+            <StackLayout
+                Orientation="Horizontal">
+                <Entry
+                    x:Name="FirstNameEntry"
+                    Placeholder="FirstName"
+                    Text="{Binding FirstName}"/>
+                <Entry
+                    x:Name="LastNameEntry"
+                    Placeholder="LastName"
+                    Text="{Binding LastName}"/>
+
+            </StackLayout>
+            <StackLayout>
+                <Entry
+                    x:Name="PhoneNumberEntry"
+                    Placeholder="Mobile number"
+                    Text="{Binding PhoneNumber}"/>
+                <Button
+                    Text="ADD DETAILS"
+                   Clicked="Button_Clicked"/>
+                <Button
+                    Text="View ID"
+                    Clicked="Button_Clicked_2"/>
+
+                <Button
+                    Text="Go to list"
+                    Clicked="Button_Clicked_1"/>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
